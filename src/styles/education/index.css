@@ -26,4 +26,11 @@ p {
 
 #Education .container .course .school {
     font-weight: 100;
+    margin: 4px;
+    padding-top: 25px;
+}
+
+#Education .container .course p {
+    padding: 0;
+    margin: 0 0 30px 0;
 }

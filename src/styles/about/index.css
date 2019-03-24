@@ -5,6 +5,15 @@
     background-attachment: fixed;
     color: rgba(247, 140, 160, 1);
     padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#About .personal {
+    width: 70%;
+    line-height: 2;
+    padding-bottom: 30px;
 }
 
 .title {
@@ -23,4 +32,10 @@
 
 #About .skills h2 {
     font-weight: 100;
+}
+
+#About .skill {
+    width: 80%;
+    line-height: 2;
+    padding: 0 10px;
 }
