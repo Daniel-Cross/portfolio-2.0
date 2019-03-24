@@ -28,7 +28,7 @@ const Footer = () => {
 
 				<h4>+46 730 44 38 33</h4>
 			</div>
-			<h4>Daniel Cross &copy; 2019</h4>{' '}
+			<h4>Daniel Cross &copy; 2019</h4>
 		</div>
 	);
 };
