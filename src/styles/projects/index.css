@@ -1,0 +1,114 @@
+#Projects {
+    color: rgba(247, 140, 160, 1);
+    padding-bottom: 50px;
+}
+
+#Projects h1 {
+    padding-top: 25px;
+}
+
+#Projects .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Projects .container .project .desktop {
+    height: 600px;
+    width: 75%;
+    position: relative;
+    left: -50px;
+}
+
+#Projects .container .project .desktop-only {
+    height: 600px;
+    width: 75%;
+    position: relative;
+}
+
+#Projects .container .project .mobile-only {
+    height: 500px;
+    width: 25%;
+    position: relative;
+}
+
+#Projects .container .project .mobile {
+    height: 500px;
+    width: 25%;
+    position: absolute;
+    left: 850px;
+    top: 2310px;
+}
+
+#Projects .container .project h2 {
+    font-weight: 100;
+}
+
+#Projects hr {
+    width: 50em;
+    height: 3px;
+    background-color: rgba(247, 140, 160, 1);
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#Projects .container .project .project-title {
+    font-size: 50px;
+}
+
+#Projects .container .project .description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Projects .container .project .description .synopsis {
+    padding: 0 160px 0 120px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+#Projects .container .project .technology {
+    height: 50px;
+    width: 70px;
+    margin: auto;
+}
+
+#Projects .container .project .made-with p {
+    padding: 15px 0 20px 0;
+    margin: 0;
+}
+
+#Projects .container .project .description .tweet {
+    position: relative;
+    left: -120px;
+    padding: 0;
+    margin: 0;
+}
+
+#Projects .container .project .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#Projects .container .project .links i:hover {
+    color: #ffef14;
+    cursor: pointer;
+}
+
+#Projects .container .project .links a {
+    color: rgba(247, 140, 160, 1);
+    margin: 40px 80px 0 80px;
+}
+
+#Projects .container .project .detail {
+    width: 50%;
+    margin: auto;
+    padding-top: 40px;
+    line-height: 2;
+}

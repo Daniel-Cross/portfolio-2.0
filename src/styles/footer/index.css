@@ -1,0 +1,34 @@
+#Footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    color: rgba(247, 140, 160, 1);
+}
+
+#Footer .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Footer .avatar {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+#Footer i {
+    color: rgba(247, 140, 160, 1);
+}
+
+#Footer i:hover {
+    color: #ffef14;
+    cursor: pointer;
+}
+
+#Footer h4 {
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+}

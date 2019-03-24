@@ -1,16 +1,26 @@
-.About {
-    background: linear-gradient(to right, rgba(247, 140, 160, 0.8) 0%, rgba(249, 116, 143, 0.8) 19%, rgba(253, 134, 140, 0.8) 60%, rgba(254, 154, 139, 0.8) 100%), no-repeat, center;
+#About {
+    background: #fff;
     height: 100%;
     background-size: cover;
     background-attachment: fixed;
+    color: rgba(247, 140, 160, 1);
+    padding: 25px 0;
 }
 
-.About .container {
-    padding-top: 100px;
+.title {
+    text-decoration: underline #ffef14;
+    font-weight: 100;
+    padding-bottom: 15px;
+    margin: 0;
 }
 
-.About .avatar {
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
+#About .skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#About .skills h2 {
+    font-weight: 100;
 }

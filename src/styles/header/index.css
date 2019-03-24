@@ -1,8 +1,8 @@
-.Header {
+#Header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: 50px;
+    flex-basis: 100px;
     background: linear-gradient(to right, rgba(247, 140, 160, 0.8) 0%, rgba(249, 116, 143, 0.8) 19%, rgba(253, 134, 140, 0.8) 60%, rgba(254, 154, 139, 0.8) 100%), url('../../assets/img/smoke.jpeg'), no-repeat, center;
     background-size: cover;
     background-attachment: fixed;
@@ -26,16 +26,78 @@
     }
 }
 
-.Header .hero h1,
+#Header .hero h1,
 h3 {
     margin: 0;
     font-weight: 100;
 }
 
-hr {
+#Header hr {
     width: 5em;
     height: 3px;
     background-color: #ffef14;
     border: 0;
     margin-bottom: 50px;
+}
+
+.hero i {
+    color: #ffef14;
+    padding-bottom: 15px;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.navbar ul li {
+    text-decoration: none;
+    list-style: none;
+    font-weight: 100;
+}
+
+.navbar ul li:hover {
+    cursor: pointer;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    opacity: 0;
+    animation: 2s fadeIn 1s forwards;
+    position: relative;
+}
+
+.navbar ul li a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffef14;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar ul li a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+    }
 }

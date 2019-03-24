@@ -1,0 +1,29 @@
+#Education {
+    background: linear-gradient(to right, rgba(247, 140, 160, 0.8) 0%, rgba(249, 116, 143, 0.8) 19%, rgba(253, 134, 140, 0.8) 60%, rgba(254, 154, 139, 0.8) 100%), url('../../assets/img/sign.jpeg'), no-repeat, center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px 0;
+}
+
+#Education .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#Education .container h2,
+p {
+    font-weight: 100;
+}
+
+#Education .container .course {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Education .container .course .school {
+    font-weight: 100;
+}
