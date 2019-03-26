@@ -6,18 +6,18 @@ const Header = () => {
 		<div id="Header">
 			<div className="navbar">
 				<ul>
-					<li>
+					{/* <li>
 						<a href="#About">About</a>
-					</li>
-					<li>
+					</li> */}
+					{/* <li>
 						<a href="#Experience">Experience</a>
-					</li>
+					</li> */}
 					<li>
 						<a href="#Projects">Projects</a>
 					</li>
-					<li>
+					{/* <li>
 						<a href="#Education">Education</a>
-					</li>
+					</li> */}
 					<li>
 						<a href="#Footer">Contact</a>
 					</li>

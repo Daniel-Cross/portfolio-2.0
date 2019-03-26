@@ -38,7 +38,7 @@
     width: 25%;
     position: absolute;
     left: 850px;
-    top: 2530px;
+    top: 1058px;
 }
 
 #Projects .container .project h2 {
@@ -111,4 +111,11 @@
     margin: auto;
     padding-top: 40px;
     line-height: 2;
+}
+
+.title {
+    text-decoration: underline #ffef14;
+    font-weight: 100;
+    padding-bottom: 15px;
+    margin: 0;
 }
