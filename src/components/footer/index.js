@@ -22,8 +22,8 @@ const Footer = () => {
 				</a>
 			</div>
 			<div className="contact">
-				<a href="mailto:dan.s.cross@icloud.com">
-					<h4>dan.s.cross@icloud.com</h4>
+				<a href="mailto:hello@danielcross.me">
+					<h4>hello@danielcross.me</h4>
 				</a>
 
 				<h4>+46 730 44 38 33</h4>
