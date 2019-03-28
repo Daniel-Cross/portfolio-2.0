@@ -16,7 +16,10 @@ const Footer = () => {
 					src={require('/Users/danielcross/Projects/portfolio-version2/src/assets/img/avatar.jpg')}
 					alt="avatar.jpg"
 				/>
-				<i className="fab fa-facebook-messenger fa-3x" />
+				<a href="https://www.messenger.com/t/865343423558588" target="_blank">
+					<i className="fab fa-facebook-messenger fa-3x" />
+				</a>
+
 				<a href="https://twitter.com/DanCrossy" target="_blank">
 					<i className="fab fa-twitter fa-3x" />
 				</a>
