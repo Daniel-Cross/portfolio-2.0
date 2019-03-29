@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: 100px;
     background: linear-gradient(to right, rgba(247, 140, 160, 0.8) 0%, rgba(249, 116, 143, 0.8) 19%, rgba(253, 134, 140, 0.8) 60%, rgba(254, 154, 139, 0.8) 100%), url('../../assets/img/smoke.jpeg'), no-repeat, center;
     background-size: cover;
     background-attachment: fixed;
@@ -99,5 +98,16 @@ h3 {
 @keyframes fadeIn {
     100% {
         opacity: 1;
+    }
+}
+
+@media only screen and (min-device-width : 0) and (max-device-width : 600px) {
+    #Header {
+        background: linear-gradient(to right, rgba(247, 140, 160, 1) 0%, rgba(249, 116, 143, 1) 19%, rgba(253, 134, 140, 1) 60%, rgba(254, 154, 139, 1) 100%);
+
+    }
+
+    .hero {
+        font-size: 20px;
     }
 }

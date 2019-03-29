@@ -3,27 +3,37 @@ import { TwitterTweetEmbed } from 'react-twitter-embed';
 
 import '../../styles/projects/index.css';
 
-const Projects = () => {
+const Projects = (props) => {
 	const jest = {
 		height: '50px',
 		width: '50px',
 	};
+
+	const style = {
+		visibility: 'hidden',
+	};
+
 	return (
 		<div id="Projects">
 			<h1 className="title">Projects</h1>
 			<div className="container">
 				<div className="project">
 					<h2 className="project-title">King Kev Quote Generator</h2>
-					<img
-						className="desktop"
-						src={require('../../assets/img/kingKevDesktop.png')}
-						alt="king kev quote generator desktop"
-					/>
-					<img
-						className="mobile"
-						src={require('../../assets/img/kingKevMobile.png')}
-						alt="king kev quote generator mobile"
-					/>
+					{props.isDesktop ? (
+						<div>
+							<img
+								className="desktop"
+								src={require('../../assets/img/kingKevDesktop.png')}
+								alt="king kev quote generator desktop"
+							/>
+
+							<img
+								className="mobile"
+								src={require('../../assets/img/kingKevMobile.png')}
+								alt="king kev quote generator mobile"
+							/>
+						</div>
+					) : null}
 					<hr />
 					<div className="description">
 						<div className="synopsis">
@@ -53,19 +63,23 @@ const Projects = () => {
 								</a>
 							</div>
 						</div>
-						<div className="tweet">
-							<TwitterTweetEmbed tweetId={'1107951232688242688'} />
-						</div>
+						{props.isDesktop ? (
+							<div className="tweet">
+								<TwitterTweetEmbed tweetId={'1107951232688242688'} />
+							</div>
+						) : null};
 					</div>
 					<hr />
 				</div>
 				<div className="project">
 					<h2 className="project-title">BookingGo Technical Test</h2>
-					<img
-						className="desktop-only"
-						src={require('../../assets/img/bookingGoDesktop.png')}
-						alt="booking go technical test"
-					/>
+					{props.isDesktop ? (
+						<img
+							className="desktop-only"
+							src={require('../../assets/img/bookingGoDesktop.png')}
+							alt="booking go technical test"
+						/>
+					) : null}
 					<hr />
 					<div className="synopsis">
 						<div className="made-with">
@@ -102,7 +116,9 @@ const Projects = () => {
 				</div>
 				<div className="project">
 					<h2 className="project-title">Vice App</h2>
-					<img className="mobile-only" src={require('../../assets/img/vice.png')} alt="vice app" />
+					{props.isDesktop ? (
+						<img className="mobile-only" src={require('../../assets/img/vice.png')} alt="vice app" />
+					) : null}
 					<hr />
 					<div className="synopsis">
 						<div className="made-with">
@@ -128,7 +144,13 @@ const Projects = () => {
 				</div>
 				<div className="project">
 					<h2 className="project-title">5-3-1 Routine</h2>
-					<img className="desktop-only" src={require('../../assets/img/531.png')} alt="5-3-1 workout app" />
+					{props.isDesktop ? (
+						<img
+							className="desktop-only"
+							src={require('../../assets/img/531.png')}
+							alt="5-3-1 workout app"
+						/>
+					) : null}
 					<hr />
 					<div className="synopsis">
 						<div className="made-with">

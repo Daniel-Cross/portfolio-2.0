@@ -8,13 +8,21 @@ import Projects from './components/projects';
 // import Education from './components/education';
 
 class App extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			isDesktop: window.innerWidth > 1200,
+		};
+	}
+
 	render() {
+		const { isDesktop } = this.state;
 		return (
 			<div className="App">
 				<Header />
 				{/* <About /> */}
 				{/* <Experience /> */}
-				<Projects />
+				<Projects isDesktop={isDesktop} />
 				{/* <Education /> */}
 				<Footer />
 			</div>
