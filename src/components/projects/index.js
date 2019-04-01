@@ -9,10 +9,6 @@ const Projects = (props) => {
 		width: '50px',
 	};
 
-	const style = {
-		visibility: 'hidden',
-	};
-
 	return (
 		<div id="Projects">
 			<h1 className="title">Projects</h1>
@@ -172,6 +168,52 @@ const Projects = (props) => {
 
 						<div className="links">
 							<a href="https://github.com/Daniel-Cross/5-3-1-workout-tracker" target="_blank">
+								<i className="fab fa-github fa-3x" />
+							</a>
+						</div>
+						<hr />
+					</div>
+				</div>
+				<div className="project">
+					<h2 className="project-title">Virtual Pet</h2>
+					{props.isDesktop ? (
+						<img
+							className="desktop-only"
+							src={require('../../assets/img/oop1.png')}
+							alt="Pocket Monster OOP"
+						/>
+					) : null}
+					<hr />
+					<div className="synopsis">
+						<div className="made-with">
+							<img
+								className="technology"
+								src={require('../../assets/img/JavaScript.png')}
+								alt="react logo"
+								style={jest}
+							/>
+						</div>
+						<p className="detail">
+							Real pets are great, but they do have drawbacks. They smell. Your mum might be allergic to
+							them. Maybe you just aren't allowed one in your flat.
+							<br />
+							<br />
+							To solve these problems, I built my own JavaScript pet instead. JavaScript pets are great.
+							Because they're made of JavaScript, they can do literally anything, and they don't have any
+							of the drawbacks of regular pets.
+							<br />
+							<br />
+							This pet has all the following features: <br />
+							They can get older <br />
+							As they get older, they get hungrier and less fit <br />
+							You can walk your pet to increase it's fitness. 🏃<br />
+							You can feed your pet to decrease it's hunger. 🍕 <br /> You can talk to your pet to see if
+							it needs feeding or walking <br /> If your pet gets too hungry or unfit, it will DIE 💀{' '}
+							<br /> If your pet gets to 30 days old it will DIE 😢
+						</p>
+
+						<div className="links">
+							<a href="https://github.com/Daniel-Cross/oop" target="_blank">
 								<i className="fab fa-github fa-3x" />
 							</a>
 						</div>
