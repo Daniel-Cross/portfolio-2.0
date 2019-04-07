@@ -217,7 +217,6 @@ const Projects = (props) => {
 								<i className="fab fa-github fa-3x" />
 							</a>
 						</div>
-						<hr />
 					</div>
 				</div>
 			</div>
