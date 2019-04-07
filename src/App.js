@@ -19,21 +19,6 @@ class App extends Component {
 			sent: false,
 			messageText: '',
 		};
-
-		let data = {
-			name: this.state.name,
-			email: this.state.email,
-			message: this.state.message,
-		};
-
-		axios
-			.post('API_URI', data)
-			.then((res) => {
-				this.setState({ sent: true }, this.resetForm());
-			})
-			.catch(() => {
-				console.log('Message not sent');
-			});
 	}
 
 	handleResetForm = () => {
@@ -51,9 +36,32 @@ class App extends Component {
 		this.setState({ [name]: value });
 	};
 
-	handleSubmit = (e) => {
+	handleSubmit(e) {
 		e.preventDefault();
-	};
+		const name = document.getElementById('name').value;
+		const email = document.getElementById('email').value;
+		const message = document.getElementById('message').value;
+		axios({
+			method: 'POST',
+			url: 'http://localhost:3002/send',
+			data: {
+				name,
+				email,
+				message,
+			},
+		}).then((response) => {
+			if (response.data.msg === 'success') {
+				alert('Message Sent.');
+				this.resetForm();
+			} else if (response.data.msg === 'fail') {
+				alert('Message failed to send.');
+			}
+		});
+	}
+
+	resetForm() {
+		document.getElementById('contact-form').reset();
+	}
 
 	render() {
 		const { isDesktop, name, email, message } = this.state;

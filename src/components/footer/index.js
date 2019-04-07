@@ -8,7 +8,7 @@ const Footer = (props) => {
 			<hr />
 			<h1 className="title">Contact</h1>
 			<div className="email-form">
-				<form onSubmit={handleSubmit}>
+				<form onSubmit={handleSubmit} method="POST" id="contact-form">
 					<input type="text" placeholder="Name" name="name" value={name} onChange={handleChange} />
 					<input type="email" placeholder="Email" name="email" value={email} onChange={handleChange} />
 					<textarea
@@ -38,9 +38,8 @@ const Footer = (props) => {
 				<a href="https://www.messenger.com/t/crossy1686" target="_blank">
 					<i className="fab fa-facebook-messenger fa-3x" />
 				</a>
-				<a href="mailto:hello@danielcross.me">
-					<i className="fas fa-envelope fa-3x" />
-				</a>
+				<a href="mailto:hello@danielcross.me" />
+				<i className="fas fa-envelope fa-3x" />
 
 				<a href="https://twitter.com/DanCrossy" target="_blank">
 					<i className="fab fa-twitter fa-3x" />
