@@ -19,7 +19,7 @@ const Header = () => {
 						<a href="#Education">Education</a>
 					</li> */}
 					<li>
-						<a href="#Footer">Contact</a>
+						<a href="#Footer">Social</a>
 					</li>
 				</ul>
 			</div>

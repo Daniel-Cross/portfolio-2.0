@@ -6,22 +6,7 @@ const Footer = (props) => {
 	return (
 		<div id="Footer">
 			<hr />
-			<h1 className="title">Contact</h1>
-			<div className="email-form">
-				<form onSubmit={handleSubmit}>
-					<input type="text" placeholder="Name" name="name" value={name} onChange={handleChange} />
-					<input type="email" placeholder="Email" name="email" value={email} onChange={handleChange} />
-					<textarea
-						rows="5"
-						cols="50"
-						placeholder="Message..."
-						name="message"
-						value={message}
-						onChange={handleChange}
-					/>
-					<button type="submit">Submit</button>
-				</form>
-			</div>
+			{/* <h1 className="title">Contact</h1> */}
 			<div className="social">
 				<a href="https://github.com/Daniel-Cross" target="_blank">
 					<i className="fab fa-github fa-3x" />
