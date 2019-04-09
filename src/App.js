@@ -18,6 +18,9 @@ class App extends Component {
 			message: '',
 			sent: false,
 			messageText: '',
+			alertMessage: '',
+			isSuccess: false,
+			isError: false,
 		};
 	}
 
@@ -45,7 +48,7 @@ class App extends Component {
 	}
 
 	render() {
-		const { isDesktop, name, email, message } = this.state;
+		const { isDesktop, name, email, message, alertMessage } = this.state;
 		return (
 			<div className="App">
 				<Header />
@@ -55,7 +58,10 @@ class App extends Component {
 				{/* <Education /> */}
 
 				{/* <Form
-					name={name}
+
+				{this.state.isSuccess || this.state.isError ? (
+						<Alert alertMessage={alertMessage} isSuccess={isSuccess} isError={isError} />
+					) : null}					name={name}
 					subject={email}
 					message={message}
 					handleSubmit={this.handleSubmit}
