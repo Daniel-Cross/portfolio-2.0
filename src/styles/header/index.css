@@ -5,6 +5,7 @@
     background: linear-gradient(to right, rgba(247, 140, 160, 0.8) 0%, rgba(249, 116, 143, 0.8) 19%, rgba(253, 134, 140, 0.8) 60%, rgba(254, 154, 139, 0.8) 100%), url('../../assets/img/smoke.jpeg'), no-repeat, center;
     background-size: cover;
     background-attachment: fixed;
+    color: #fff;
 }
 
 .hero {
@@ -54,6 +55,8 @@ h3 {
     justify-content: space-around;
     padding: 0;
     margin-bottom: 0;
+    opacity: 0;
+    animation: 2s fadeIn 1s forwards;
 }
 
 .navbar ul li {
@@ -69,8 +72,6 @@ h3 {
 .navbar ul li a {
     text-decoration: none;
     color: white;
-    opacity: 0;
-    animation: 2s fadeIn 1s forwards;
     position: relative;
 }
 
@@ -110,4 +111,79 @@ h3 {
     .hero {
         font-size: 20px;
     }
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 18px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #ffef14;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: rgba(247, 140, 160, 1);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px rgba(247, 140, 160, 1);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(14px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#darkMode {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#darkMode i {
+    margin: 0;
+    padding-right: 10px;
 }

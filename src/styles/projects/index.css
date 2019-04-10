@@ -1,10 +1,11 @@
 #Projects {
-    color: rgba(247, 140, 160, 1);
+    /* color: rgba(247, 140, 160, 1); */
     padding-bottom: 50px;
 }
 
 #Projects h1 {
     padding-top: 25px;
+    font-size: 60px;
 }
 
 #Projects .container {
@@ -55,7 +56,7 @@
 }
 
 #Projects .container .project .project-title {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 #Projects .container .project .description {
