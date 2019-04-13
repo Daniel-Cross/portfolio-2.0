@@ -220,6 +220,35 @@ const Projects = (props) => {
 						<hr />
 					</div>
 				</div>
+				<div className="project">
+					<h2 className="project-title">NASA Search</h2>
+					{props.isDesktop ? (
+						<img className="desktop-only" src={require('../../assets/img/nasa.png')} alt="NASA search" />
+					) : null}
+					<hr />
+					<div className="synopsis">
+						<div className="made-with">
+							<img className="technology" src={require('../../assets/img/react.png')} alt="react logo" />
+						</div>
+						<p className="detail">
+							A search engine that returns space related images from NASA's api. Search for you favourite
+							planet or star and see what pictures NASA have taken as part of their research!
+							<br />
+							<br />
+							This application was built using React.js and tested using Jest.
+						</p>
+
+						<div className="links">
+							<a href="https://github.com/Daniel-Cross/nasa-search-engine" target="_blank">
+								<i className="fab fa-github fa-3x" />
+							</a>
+							<a href="https://nasa-search-image.herokuapp.com/" target="_blank">
+								<i className="far fa-window-maximize fa-3x" />
+							</a>
+						</div>
+						<hr />
+					</div>
+				</div>
 			</div>
 		</div>
 	);
