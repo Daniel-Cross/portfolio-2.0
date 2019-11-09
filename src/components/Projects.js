@@ -1,8 +1,6 @@
 import React from 'react';
 import { TwitterTweetEmbed } from 'react-twitter-embed';
 
-import '../../styles/projects/index.css';
-
 const Projects = (props) => {
 	const jest = {
 		height: '50px',
@@ -19,13 +17,13 @@ const Projects = (props) => {
 						<div>
 							<img
 								className="desktop"
-								src={require('../../assets/img/kingKevDesktop.png')}
+								src={require('../assets/img/kingKevDesktop.png')}
 								alt="king kev quote generator desktop"
 							/>
 
 							<img
 								className="mobile"
-								src={require('../../assets/img/kingKevMobile.png')}
+								src={require('../assets/img/kingKevMobile.png')}
 								alt="king kev quote generator mobile"
 							/>
 						</div>
@@ -34,11 +32,7 @@ const Projects = (props) => {
 					<div className="description">
 						<div className="synopsis">
 							<div className="made-with">
-								<img
-									className="technology"
-									src={require('../../assets/img/react.png')}
-									alt="react logo"
-								/>
+								<img className="technology" src={require('../assets/img/react.png')} alt="react logo" />
 							</div>
 							<p>
 								The King Kev Quote Generator idea was manifested one day while searching for a certain
@@ -72,17 +66,17 @@ const Projects = (props) => {
 					{props.isDesktop ? (
 						<img
 							className="desktop-only"
-							src={require('../../assets/img/bookingGoDesktop.png')}
+							src={require('../assets/img/bookingGoDesktop.png')}
 							alt="booking go technical test"
 						/>
 					) : null}
 					<hr />
 					<div className="synopsis">
 						<div className="made-with">
-							<img className="technology" src={require('../../assets/img/react.png')} alt="react logo" />
+							<img className="technology" src={require('../assets/img/react.png')} alt="react logo" />
 							<img
 								className="technology"
-								src={require('../../assets/img/jest.jpg')}
+								src={require('../assets/img/jest.jpg')}
 								alt="jest logo"
 								style={jest}
 							/>
@@ -113,12 +107,12 @@ const Projects = (props) => {
 				<div className="project">
 					<h2 className="project-title">Vice App</h2>
 					{props.isDesktop ? (
-						<img className="mobile-only" src={require('../../assets/img/vice.png')} alt="vice app" />
+						<img className="mobile-only" src={require('../assets/img/vice.png')} alt="vice app" />
 					) : null}
 					<hr />
 					<div className="synopsis">
 						<div className="made-with">
-							<img className="technology" src={require('../../assets/img/react.png')} alt="react logo" />
+							<img className="technology" src={require('../assets/img/react.png')} alt="react logo" />
 						</div>
 						<p className="detail">
 							Dark humour mobile first React.js app. Enter your Vice and the app will give you advice and
@@ -141,17 +135,13 @@ const Projects = (props) => {
 				<div className="project">
 					<h2 className="project-title">5-3-1 Routine</h2>
 					{props.isDesktop ? (
-						<img
-							className="desktop-only"
-							src={require('../../assets/img/531.png')}
-							alt="5-3-1 workout app"
-						/>
+						<img className="desktop-only" src={require('../assets/img/531.png')} alt="5-3-1 workout app" />
 					) : null}
 					<hr />
 					<div className="synopsis">
 						<div className="made-with">
-							<img className="technology" src={require('../../assets/img/react.png')} alt="react logo" />
-							<img className="technology" src={require('../../assets/img/node.png')} alt="react logo" />
+							<img className="technology" src={require('../assets/img/react.png')} alt="react logo" />
+							<img className="technology" src={require('../assets/img/node.png')} alt="react logo" />
 						</div>
 						<p className="detail">
 							A workout tracking app that specialises in helping track your 5-3-1 routines and
@@ -179,7 +169,7 @@ const Projects = (props) => {
 					{props.isDesktop ? (
 						<img
 							className="desktop-only"
-							src={require('../../assets/img/oop1.png')}
+							src={require('../assets/img/oop1.png')}
 							alt="Pocket Monster OOP"
 						/>
 					) : null}
@@ -188,7 +178,7 @@ const Projects = (props) => {
 						<div className="made-with">
 							<img
 								className="technology"
-								src={require('../../assets/img/JavaScript.png')}
+								src={require('../assets/img/JavaScript.png')}
 								alt="react logo"
 								style={jest}
 							/>
@@ -223,12 +213,12 @@ const Projects = (props) => {
 				<div className="project">
 					<h2 className="project-title">NASA Search</h2>
 					{props.isDesktop ? (
-						<img className="desktop-only" src={require('../../assets/img/nasa.png')} alt="NASA search" />
+						<img className="desktop-only" src={require('../assets/img/nasa.png')} alt="NASA search" />
 					) : null}
 					<hr />
 					<div className="synopsis">
 						<div className="made-with">
-							<img className="technology" src={require('../../assets/img/react.png')} alt="react logo" />
+							<img className="technology" src={require('../assets/img/react.png')} alt="react logo" />
 						</div>
 						<p className="detail">
 							A search engine that returns space related images from NASA's api. Search for you favourite

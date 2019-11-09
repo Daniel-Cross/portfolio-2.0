@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../styles/header/index.css';
 
 const Header = (props) => {
 	const { handleModeChange, isDarkMode } = props;
