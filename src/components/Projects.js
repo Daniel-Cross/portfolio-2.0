@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { TwitterTweetEmbed } from 'react-twitter-embed';
 
 const Projects = (props) => {
@@ -12,21 +12,48 @@ const Projects = (props) => {
 			<h1 className="title">Projects</h1>
 			<div className="container">
 				<div className="project">
-					<h2 className="project-title">King Kev Quote Generator</h2>
+					<h2 className="project-title">InTouch Networks Members Portal</h2>
 					{props.isDesktop ? (
-						<div>
+						<Fragment>
 							<img
-								className="desktop"
-								src={require('../assets/img/kingKevDesktop.png')}
-								alt="king kev quote generator desktop"
+								className="desktop-only"
+								src={require('../assets/img/intouchDesktop.png')}
+								alt="members portal"
 							/>
-
 							<img
 								className="mobile"
-								src={require('../assets/img/kingKevMobile.png')}
-								alt="king kev quote generator mobile"
+								src={require('../assets/img/intouchMobile.png')}
+								alt="members portal"
 							/>
+						</Fragment>
+					) : null}
+					<hr />
+					<div className="synopsis">
+						<div className="made-with">
+							<img className="technology" src={require('../assets/img/react.png')} alt="react logo" />
 						</div>
+						<p className="detail">
+							During my time at InTouch Networks we completed a huge overhaul of the members portal from a
+							tired, dated look to a more modern and sleek looking website with added functionality such
+							as podcast playback, blog integration with a headless CMS and a members search function.
+						</p>
+
+						<div className="links">
+							<a href="https://portal.intouchnetworks.com/" target="_blank">
+								<i className="far fa-window-maximize fa-3x" />
+							</a>
+						</div>
+					</div>
+					<hr />
+				</div>
+				<div className="project">
+					<h2 className="project-title">King Kev Quote Generator</h2>
+					{props.isDesktop ? (
+						<img
+							className="desktop"
+							src={require('../assets/img/kingKevDesktop.png')}
+							alt="king kev quote generator desktop"
+						/>
 					) : null}
 					<hr />
 					<div className="description">
@@ -58,49 +85,6 @@ const Projects = (props) => {
 								<TwitterTweetEmbed tweetId={'1107951232688242688'} />
 							</div>
 						) : null};
-					</div>
-					<hr />
-				</div>
-				<div className="project">
-					<h2 className="project-title">BookingGo Technical Test</h2>
-					{props.isDesktop ? (
-						<img
-							className="desktop-only"
-							src={require('../assets/img/bookingGoDesktop.png')}
-							alt="booking go technical test"
-						/>
-					) : null}
-					<hr />
-					<div className="synopsis">
-						<div className="made-with">
-							<img className="technology" src={require('../assets/img/react.png')} alt="react logo" />
-							<img
-								className="technology"
-								src={require('../assets/img/jest.jpg')}
-								alt="jest logo"
-								style={jest}
-							/>
-						</div>
-						<p className="detail">
-							This is the completed technical test received from BookingGo (RentalCars) which helped gain
-							successful employment with the company. The task was to implement a user story as close to
-							the original example as possible. The solution had to work in all modern browsers (IE10+) in
-							desktop only, however, consideration was made for a mobile first approach.
-							<br />
-							<br />
-							The search function had to return a city from the BookingGo api with matching characters
-							once three or more letters were entered into the search input. Thorough testing and test
-							driven development were also used but not mandatory.
-						</p>
-
-						<div className="links">
-							<a href="https://github.com/Daniel-Cross/rental-cars" target="_blank">
-								<i className="fab fa-github fa-3x" />
-							</a>
-							<a href="https://rental-cars.herokuapp.com/" target="_blank">
-								<i className="far fa-window-maximize fa-3x" />
-							</a>
-						</div>
 					</div>
 					<hr />
 				</div>
