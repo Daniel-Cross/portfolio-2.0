@@ -39,6 +39,7 @@ const Projects = (props) => {
 						</p>
 
 						<div className="links">
+							{/* eslint-disable-next-line */}
 							<a href="https://portal.intouchnetworks.com/" target="_blank">
 								<i className="far fa-window-maximize fa-3x" />
 							</a>
@@ -72,9 +73,11 @@ const Projects = (props) => {
 								footballing podcast gave the website a mention on a show!
 							</p>
 							<div className="links">
+								{/* eslint-disable-next-line */}
 								<a href="https://github.com/Daniel-Cross/keegan" target="_blank">
 									<i className="fab fa-github fa-3x" />
 								</a>
+								{/* eslint-disable-next-line */}
 								<a href="https://superkevinkeegan.com/" target="_blank">
 									<i className="far fa-window-maximize fa-3x" />
 								</a>
@@ -109,6 +112,7 @@ const Projects = (props) => {
 						</p>
 
 						<div className="links">
+							{/* eslint-disable-next-line */}
 							<a href="https://github.com/Daniel-Cross/vice-app/blob/master/README.md" target="_blank">
 								<i className="fab fa-github fa-3x" />
 							</a>
@@ -141,6 +145,7 @@ const Projects = (props) => {
 						</p>
 
 						<div className="links">
+							{/* eslint-disable-next-line */}
 							<a href="https://github.com/Daniel-Cross/5-3-1-workout-tracker" target="_blank">
 								<i className="fab fa-github fa-3x" />
 							</a>
@@ -187,6 +192,7 @@ const Projects = (props) => {
 						</p>
 
 						<div className="links">
+							{/* eslint-disable-next-line */}
 							<a href="https://github.com/Daniel-Cross/oop" target="_blank">
 								<i className="fab fa-github fa-3x" />
 							</a>
@@ -213,9 +219,11 @@ const Projects = (props) => {
 						</p>
 
 						<div className="links">
+							{/* eslint-disable-next-line */}
 							<a href="https://github.com/Daniel-Cross/nasa-search-engine" target="_blank">
 								<i className="fab fa-github fa-3x" />
 							</a>
+							{/* eslint-disable-next-line */}
 							<a href="https://nasa-search-image.herokuapp.com/" target="_blank">
 								<i className="far fa-window-maximize fa-3x" />
 							</a>
