@@ -12,11 +12,7 @@ const Footer = (props) => {
 				<a href="https://www.linkedin.com/in/daniel-cross/" target="_blank">
 					<i className="fab fa-linkedin-in fa-3x" />
 				</a>
-				<img
-					className="avatar"
-					src={require('/Users/danielcross/Projects/portfolio-version2/src/assets/img/avatar.jpg')}
-					alt="avatar.jpg"
-				/>
+				<img className="avatar" src={require('../assets/img/avatar.jpg')} alt="avatar.jpg" />
 				{/* eslint-disable-next-line */}
 				<a href="https://www.messenger.com/t/crossy1686" target="_blank">
 					<i className="fab fa-facebook-messenger fa-3x" />
